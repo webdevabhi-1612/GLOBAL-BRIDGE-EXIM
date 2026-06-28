@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+  /* 1. Register Hanken Grotesk as your heading font */
+  --font-heading: 'Hanken Grotesk', sans-serif;
+}
+
+/* BASE STYLES */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    overflow-x: hidden;
+    background-color: #0a0a0a;
+  }
+
+  /* 2. Force the heading font on all heading tags globally */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
